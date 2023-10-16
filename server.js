@@ -4,7 +4,7 @@ import { sequelize } from "./models/base.js";
 import { config } from "dotenv";
 config();
 const app = express();
-
+app.use(express.json());
 const port = process.env.PORT;
 app.get("/", (req, res) => {
   res.send("Hello World!");

@@ -12,7 +12,4 @@ export const sequelize = new Sequelize({
 
 try {
   sequelize.authenticate();
-  console.log("connect success");
-} catch (error) {
-  console.log("Connect error");
-}
+} catch (error) {}
