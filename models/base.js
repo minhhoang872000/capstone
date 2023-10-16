@@ -1,7 +1,6 @@
 import { config } from "dotenv";
 import { Sequelize } from "sequelize";
 config();
-
 export const sequelize = new Sequelize({
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
