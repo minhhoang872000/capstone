@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 app.use("/user", userRouter);
-
+sequelize.sync();
 app.listen(port, function () {
   // ...
 });
