@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 import { sequelize } from "./base.js";
 
-const User = sequelize.define("user", {
+export const User = sequelize.define("user", {
   username: {
     type: Sequelize.STRING,
   },
@@ -13,5 +13,6 @@ const User = sequelize.define("user", {
   },
   birthdate: {
     type: Sequelize.DATE,
+    allowNull: true,
   },
 });
