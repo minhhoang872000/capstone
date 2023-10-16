@@ -8,7 +8,7 @@ export const sequelize = new Sequelize({
   database: process.env.DATABASE,
   dialect: "postgres",
   port: process.env.DB_PORT,
-  host: process.env.DB.HOST,
+  host: process.env.DB_HOST,
 });
 
 try {
